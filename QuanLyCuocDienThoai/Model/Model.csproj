@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD1AA70D-EEBB-4475-BA31-3529712AD6E8}</ProjectGuid>
+    <ProjectGuid>{F7B95722-5AAB-4642-A57A-68240E847E83}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Model</RootNamespace>
     <AssemblyName>Model</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EFModel\ChitietHDTC.cs" />
+    <Compile Include="EFModel\GiaCuoc.cs" />
+    <Compile Include="EFModel\HoaDonDangKy.cs" />
     <Compile Include="EFModel\HoaDonTinhCuoc.cs" />
     <Compile Include="EFModel\KhachHang.cs" />
     <Compile Include="EFModel\QLCDTContext.cs" />
@@ -61,7 +64,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database\QLCuocDT.sql" />
+    <Content Include="Database\QLCuocDT %281%29.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

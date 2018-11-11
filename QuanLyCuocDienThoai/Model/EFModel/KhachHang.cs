@@ -12,28 +12,36 @@ namespace Model.EFModel
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public KhachHang()
         {
+            HoaDonDangKies = new HashSet<HoaDonDangKy>();
             HoaDonTinhCuocs = new HashSet<HoaDonTinhCuoc>();
         }
 
-        [Key]
-        public int MaKH { get; set; }
+        public int KhachHangID { get; set; }
 
+        [Required]
         [StringLength(20)]
         public string TenKH { get; set; }
 
+        [Required]
         [StringLength(20)]
         public string CMND { get; set; }
 
+        [Required]
         [StringLength(20)]
         public string NgheNghiep { get; set; }
 
+        [Required]
         [StringLength(20)]
         public string ChucVu { get; set; }
 
+        [Required]
         [StringLength(100)]
         public string DiaChi { get; set; }
 
-        public bool? Flag { get; set; }
+        public bool Flag { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<HoaDonDangKy> HoaDonDangKies { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDonTinhCuoc> HoaDonTinhCuocs { get; set; }

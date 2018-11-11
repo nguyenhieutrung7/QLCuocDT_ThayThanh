@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{101965F2-0295-4548-8557-0F4D6B19D02E}</ProjectGuid>
+    <ProjectGuid>{8BFE3299-9070-45F4-AD4F-10FEA77DBBD1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GiaoDienNhanVien</RootNamespace>
     <AssemblyName>GiaoDienNhanVien</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -104,7 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{fd1aa70d-eebb-4475-ba31-3529712ad6e8}</Project>
+      <Project>{f7b95722-5aab-4642-a57a-68240e847e83}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
